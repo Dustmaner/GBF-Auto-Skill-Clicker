@@ -7,6 +7,7 @@
 #include <windows.h>
 #include <conio.h>
 #include <fstream>
+#include <string>
 using namespace std;
 
 
@@ -16,13 +17,16 @@ void main()
 	ifstream inFile;
 	int counter = 0;
 	int x;
-	char go = 'y';
+	string go = "y";
+	string fileChoose = "1.txt";
 
-	cout << "Loop times: " << counter << endl;
-	system("pause");
+	while (go != "`" || '\0') {
+		cout << "Loop times: " << counter++ << endl;
+		cout << "choose your skill file: \n(no \".txt\" needed and limit 1 char)" << endl;
+		getline(cin, go);
+		fileChoose = go + ".txt";
 
-	while (go == 'y' || '\0') {
-		inFile.open("skills.txt");
+		inFile.open(fileChoose);
 		if (!inFile) {
 			cerr << "Unable to open file datafile.txt";
 			exit(1);   // call system to stop
@@ -97,10 +101,8 @@ void main()
 		mouse_event(MOUSEEVENTF_LEFTDOWN | MOUSEEVENTF_LEFTUP, 0, 0, 0, 0);
 
 		inFile.close();
-		//cout << "Again? (y/n)" << endl;
-		//cin >> go;
-		cout << "Loop times: "<< ++counter << endl;
-		system("pause");
+
+		//system("pause");
 
 	}
 }

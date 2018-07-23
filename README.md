@@ -1,7 +1,7 @@
 # GBF-Auto-Skill-Clicker
 This program will click skills in viramate for Granblue Fantasy depending on the contents of skills.txt
 
-skills.txt gives the required information to the program please do not modify the name
+"1.txt" gives the required information to the program. Please create your own with unique names.
 
 The first number is the delay(ms) between clicks
 The rest are the desired skills 

@@ -1,4 +1,4 @@
-﻿  stdafx.cpp
-  gw5.cpp
+﻿  gw5.cpp
+cl : Command line warning D9028: minimal rebuild failure, reverting to normal build
   gw5.vcxproj -> C:\Users\Dustmaner\Documents\GitHub\GBF-Auto-Skill-Clicker\Debug\gw5.exe
   gw5.vcxproj -> C:\Users\Dustmaner\Documents\GitHub\GBF-Auto-Skill-Clicker\Debug\gw5.pdb (Full PDB)
