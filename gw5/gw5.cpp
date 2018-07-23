@@ -92,6 +92,9 @@ void main()
 		}
 		SetCursorPos(-126, 473);//Attack
 		mouse_event(MOUSEEVENTF_LEFTDOWN | MOUSEEVENTF_LEFTUP, 0, 0, 0, 0);
+		Sleep(sleepTime);
+		SetCursorPos(-440, 500);//AUTO
+		mouse_event(MOUSEEVENTF_LEFTDOWN | MOUSEEVENTF_LEFTUP, 0, 0, 0, 0);
 
 		inFile.close();
 		//cout << "Again? (y/n)" << endl;
