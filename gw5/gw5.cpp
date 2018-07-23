@@ -22,7 +22,7 @@ void main()
 
 	while (go != "`" || '\0') {
 		cout << "Loop times: " << counter++ << endl;
-		cout << "choose your skill file: \n(no \".txt\" needed and limit 1 char)" << endl;
+		cout << "choose your skill file: \n(no \".txt\" needed)" << endl;
 		getline(cin, go);
 		fileChoose = go + ".txt";
 
