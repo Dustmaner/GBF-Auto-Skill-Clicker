@@ -83,13 +83,39 @@ void main()
 			}//1
 			if (x == 42) {
 				SetCursorPos(-183, 716);
-			}//1
+			}//2
 			if (x == 43) {
 				SetCursorPos(-219, 752);
-			}//1
+			}//3
 			if (x == 44) {
 				SetCursorPos(-183, 752);
+			}//4
+
+			//Skills for 1 Char
+			if (x == 1) {
+				SetCursorPos(-352, 399);
+				Sleep(100);
 			}//1
+			if (x == 2) {
+				SetCursorPos(-260, 399);
+				Sleep(100);
+			}//2
+			if (x == 3) {
+				SetCursorPos(-168, 399);
+				Sleep(100);
+			}//3
+			if (x == 4) {
+				SetCursorPos(-353, 559);
+				Sleep(100);
+			}//4
+			if (x == 5) {
+				SetCursorPos(-260, 559);
+				Sleep(100);
+			}//5
+			if (x == 6) {
+				SetCursorPos(-168, 559);
+				Sleep(100);
+			}//6
 
 			mouse_event(MOUSEEVENTF_LEFTDOWN | MOUSEEVENTF_LEFTUP, 0, 0, 0, 0);
 			Sleep(sleepTime);
