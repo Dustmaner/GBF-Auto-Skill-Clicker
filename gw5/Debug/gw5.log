@@ -1,3 +1,4 @@
 ﻿  gw5.cpp
+c:\users\dustmaner\documents\github\gbf-auto-skill-clicker\gw5\gw5.cpp(27): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
   gw5.vcxproj -> C:\Users\Dustmaner\Documents\GitHub\GBF-Auto-Skill-Clicker\Debug\gw5.exe
   gw5.vcxproj -> C:\Users\Dustmaner\Documents\GitHub\GBF-Auto-Skill-Clicker\Debug\gw5.pdb (Full PDB)
