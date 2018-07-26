@@ -25,9 +25,9 @@ void main()
 	string fileChoose = "1.txt";
 	/* initialize random seed: */
 	srand(time(NULL));
-	int variationX = rand() % 10 -5;
-	int variationY = rand() % 10 -5;
-	int variantonD = rand() % 20 - 10;
+	int variationX;
+	int variationY;
+	int variantonD;
 
 	inFile.open("Settings.txt");
 	if (!inFile) {
@@ -38,6 +38,7 @@ void main()
 	inFile >> offset;
 	inFile >> sleepTime;
 
+	//Load a file
 	while (go != "`" || '\0') {
 		cout << "Loop times: " << counter++ << endl;
 		cout << "choose your skill file: \n(no \".txt\" needed)" << endl;
@@ -51,8 +52,13 @@ void main()
 			exit(1);   // call system to stop
 		}
 		
-
+		//Run all lines of such file
 		while (inFile >> x) {
+
+			variationX = rand() % 20 - 10;
+			variationY = rand() % 20 - 10;
+			variantonD = rand() % 80 - 40;
+
 			//MC
 			if (x == 11) {
 				SetCursorPos(0 + offset + variationX, 714 + variationY);
@@ -137,9 +143,8 @@ void main()
 
 			mouse_event(MOUSEEVENTF_LEFTDOWN | MOUSEEVENTF_LEFTUP, 0, 0, 0, 0);
 			Sleep(sleepTime + variantonD);
-			cout << "(" << variationX << ", " << variationY << ")\n";
-			variationX = rand() % 12 -6;
-			variationY = rand() % 12 -6;
+			cout << "(" << variationX << ", " << variationY << ", " << variantonD <<")\n";
+			
 		}
 		SetCursorPos(336 + offset + variationX, 473 + variationY);//Attack
 		mouse_event(MOUSEEVENTF_LEFTDOWN | MOUSEEVENTF_LEFTUP, 0, 0, 0, 0);
