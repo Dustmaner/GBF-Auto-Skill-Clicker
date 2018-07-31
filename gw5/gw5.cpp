@@ -146,10 +146,10 @@ void main()
 			cout << "(" << variationX << ", " << variationY << ", " << variantonD <<")\n";
 			
 		}
-		SetCursorPos(336 + offset + variationX, 473 + variationY);//Attack
+		SetCursorPos(336 + offset + variationX*3, 473 + variationY);//Attack
 		mouse_event(MOUSEEVENTF_LEFTDOWN | MOUSEEVENTF_LEFTUP, 0, 0, 0, 0);
 		Sleep(sleepTime + variantonD);
-		SetCursorPos(22 + offset + variationX, 505 + variationY);//AUTO
+		SetCursorPos(22 + offset + variationX*3, 505 + variationY);//AUTO
 		mouse_event(MOUSEEVENTF_LEFTDOWN | MOUSEEVENTF_LEFTUP, 0, 0, 0, 0);
 
 		inFile.close();
